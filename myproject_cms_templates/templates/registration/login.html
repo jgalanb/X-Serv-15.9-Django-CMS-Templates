@@ -1,0 +1,22 @@
+<html>
+<body>
+  <form method="post" action="/login">
+  {% csrf_token %}
+  <h3>Bienvenido a My Project Cms Templates</h3>
+  Introduce nombre de usuario y contraseña para acceder a la aplicacion:
+  <p>
+    <table>
+      <tr>
+        <td>Username</td>
+        <td>{{ form.username }}</td>
+      </tr>
+        <tr>
+          <td>Password</td>
+          <td>{{ form.password }}</td>
+        </tr>
+      </table>
+      <input type="submit" value="login" />
+    </p>  
+  </form>
+</body>
+</html>
